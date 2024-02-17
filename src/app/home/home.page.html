@@ -8,12 +8,36 @@
 
 <ion-content class="ion-padding">
 
-  <ion-button expand="block" class="ion-margin-bottom">
-    Enviar notificacion a un dispositivo
+  <ion-button
+  expand="block"  
+  class="ion-margin-bottom"
+  (click)="createOneSignalUser()">
+    Crear Usuario OneSignal  
   </ion-button>
 
-  <ion-button expand="block" class="ion-margin-bottom">
-    Enviar notificacion a todo dispositivo
+  <ion-button
+  expand="block"  
+  class="ion-margin-bottom"
+  (click)="deleteOneSignalUser()">
+    Eliminar Usuario OneSignal  
+  </ion-button>
+
+  <ion-button expand="block" class="ion-margin-bottom" (click)="sendNotificationSpecificDevice()">
+    <ion-text>
+      Enviar notificacion a un dispositivo
+    </ion-text>
+  </ion-button>
+
+  <ion-button expand="block" class="ion-margin-bottom" (click)="sendNotificationSpecificDeviceFromWeb()">
+    <ion-text>
+      Enviar notificacion a dispositivos desde Web
+    </ion-text>
+  </ion-button>
+
+  <ion-button expand="block" class="ion-margin-bottom" (click)="sendNotificationAllUsers()">
+    <ion-text>
+      Enviar notificacion a todo dispositivo
+    </ion-text>
   </ion-button>
 
 </ion-content>
